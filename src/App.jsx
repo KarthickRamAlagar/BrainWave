@@ -7,21 +7,32 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
-import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
       <Header />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/benefits" element={<Benefits />} />
-        <Route path="/collaboration" element={<Collaboration />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/roadmap" element={<Roadmap />} />
-        <Route path="/footer" element={<Footer />} />
-      </Routes>
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="benefits">
+        <Benefits />
+      </div>
+      <div id="collaboration">
+        <Collaboration />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="pricing">
+        <Pricing />
+      </div>
+      <div id="roadmap">
+        <Roadmap />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
       <ButtonGradient />
     </div>
   );
