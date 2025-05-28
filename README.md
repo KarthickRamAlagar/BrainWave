@@ -76,15 +76,13 @@ Make sure you have the following installed:
 git clone https://github.com/KarthickRamAlagar/BrainWave.git
 cd BrainWave
 ```
-## 🛠️ Installation
-
-### Step 1: Install the Project Dependencies
-
+🛠️ Installation
+Step 1: Install the Project Dependencies
 Run the following command to install the project dependencies:
-
 ```bash
 npm install
 ```
-### Step 2: Running the Project
+Step 2: Running the Project
+Run the development server with the following command:
 ```bash
 npm run dev
