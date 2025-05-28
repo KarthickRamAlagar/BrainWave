@@ -27,6 +27,7 @@
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
 5. 🕸️ [Snippets](#snippets)
+6. 🛠️ [Installation](#installation)
 
 ## 🤖 Introduction
 
@@ -62,10 +63,22 @@ Make sure you have the following installed on your machine:
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
+- [npm](https://www.npmjs.com/) (Node Packages
 ### Cloning the Repository
-
 ```bash
 git clone https://github.com/KarthickRamAlagar/BrainWave.git
-cd BrainWave  
+cd BrainWave
+```
+  
+## 🛠️ Installation
+
+### Step 1: Install the Project Dependencies
+
+Run the following command to install the project dependencies:
+
+```bash
+npm install
+```
+### Step 2: Running the Project
+```bash
+npm run dev
