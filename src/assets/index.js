@@ -9,6 +9,9 @@ import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
 import yourlogo from "./yourlogo.svg";
+import security from './security.png';
+import data from './data.png';
+import features1 from'./features1.png';
 import homeSmile from "./home-smile.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
@@ -35,22 +38,27 @@ import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
-
+import react1 from "./collaboration/react1.png";
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
-
+import alexImage from './pricing/alexImage.jpeg' 
+import vasanthRaj from './pricing/vasanthRaj.jpeg';
+import karthi from './pricing/karthi.jpeg';
+import vijay from './pricing/vijay.jpeg';
+import arjun from './pricing/arjun.jpeg';
+import guide from'./pricing/guide.jpeg';
 import coins from "./roadmap/coins.png";
 import done from "./roadmap/done.svg";
 import hero from "./roadmap/hero.png";
-import roadmap1 from "./roadmap/image-1.png";
 import roadmap2 from "./roadmap/image-2.png";
 import roadmap3 from "./roadmap/image-3.png";
 import roadmap4 from "./roadmap/image-4.png";
 import undone from "./roadmap/undone.svg";
+import r211 from"./roadmap/r211.png";
 
 import notification1 from "./notification/image-1.png";
 import notification2 from "./notification/image-2.png";
@@ -74,6 +82,9 @@ import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
+import js from"./collaboration/js.jpeg";
+import tailwind from"./collaboration/tailwind css.jpeg"
+
 
 export {
   brainwave,
@@ -87,6 +98,9 @@ export {
   smallSphere,
   grid,
   yourlogo,
+  security,
+  data,
+  features1,
   homeSmile,
   file02,
   searchMd,
@@ -107,6 +121,15 @@ export {
   figma,
   framer,
   notion,
+  react1,
+  js,
+  tailwind,
+  alexImage,
+  vasanthRaj,
+  karthi,
+  vijay,
+  arjun,
+  guide,
   photoshop,
   protopie,
   raindrop,
@@ -119,7 +142,7 @@ export {
   coins,
   done,
   hero,
-  roadmap1,
+  r211,
   roadmap2,
   roadmap3,
   roadmap4,

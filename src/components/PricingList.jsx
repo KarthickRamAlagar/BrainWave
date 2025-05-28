@@ -1,53 +1,64 @@
-import { check } from "../assets";
-import { pricing } from "../constants";
-import Button from "./Button";
+// import { check } from "../assets";
+import { contributors } from "../constants";
+// import Button from "./Button";
 
 const PricingList = () => {
   return (
-    <div className="flex gap-[1rem] max-lg:flex-wrap">
-      {pricing.map((item) => (
-        <div
-          key={item.id}
-          className="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
-        >
-          <h4 className="h4 mb-4">{item.title}</h4>
+    <div className="flex flex-col gap-[2rem] max-lg:flex-wrap justify-center">
+      {/* Original Contributors */}
+      <div className="flex gap-[1rem] max-lg:flex-wrap justify-center">
+        {contributors
+          .filter((contributor) => contributor.id !== "0") // Skip the item with id "0"
+          .map((contributor) => (
+            <div
+              key={contributor.id}
+              className="w-[19rem] max-lg:w-full h-full px-6 py-8 bg-n-8 border border-n-6 rounded-[2rem] flex flex-col items-center"
+            >
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-n-6">
+                <img
+                  src={contributor.image}
+                  alt={contributor.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h4 className="h4 mb-2 text-center">{contributor.name}</h4>
+              <p className="body-2 text-n-1/70 mb-4 text-center">
+                {contributor.role}
+              </p>
+            </div>
+          ))}
+      </div>
+      {/* Additional Section */}
+      <div className="mt-8">
+        <h4 className="h4 text-center mb-6">Special Mention</h4>
+        <div className="flex gap-[1rem] max-lg:flex-wrap justify-center">
+          {contributors.slice(0, 1).map((contributor) => (
+            <div
+              key={`gradient-${contributor.id}`}
+              className="w-[19rem] max-lg:w-full h-full px-6 py-8 flex flex-col items-center relative isolate"
+            >
+              {/* Gradient Border - Full perimeter */}
+              <div className="absolute inset-0 rounded-[2rem] p-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 -z-10">
+                <div className="absolute inset-0 rounded-[2rem] bg-n-8"></div>
+              </div>
 
-          <p className="body-2 min-h-[4rem] mb-3 text-n-1/50">
-            {item.description}
-          </p>
+              {/* Image container without border */}
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                <img
+                  src={contributor.image}
+                  alt={contributor.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-          <div className="flex items-center h-[5.5rem] mb-6">
-            {item.price && (
-              <>
-                <div className="h3">$</div>
-                <div className="text-[5.5rem] leading-none font-bold">
-                  {item.price}
-                </div>
-              </>
-            )}
-          </div>
-
-          <Button
-            className="w-full mb-6"
-            href={item.price ? "/pricing" : "mailto:contact@jsmastery.pro"}
-            white={!!item.price}
-          >
-            {item.price ? "Get started" : "Contact us"}
-          </Button>
-
-          <ul>
-            {item.features.map((feature, index) => (
-              <li
-                key={index}
-                className="flex items-start py-5 border-t border-n-6"
-              >
-                <img src={check} width={24} height={24} alt="Check" />
-                <p className="body-2 ml-4">{feature}</p>
-              </li>
-            ))}
-          </ul>
+              <h4 className="h4 mb-2 text-center">{contributor.name}</h4>
+              <p className="body-2 text-n-1/70 mb-4 text-center">
+                {contributor.role}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };
