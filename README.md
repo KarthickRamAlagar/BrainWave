@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <img src="https://i.ibb.co/Kqdv8j1/Image-from.png" alt="Project Banner">
+  <img src="https://i.ibb.co/Kqdv8j1/Image-from.png" alt="Project Banner">
   <br />
 
   <div>
@@ -16,22 +16,28 @@
   </div>
 
   <div align="center">
-    🌐 **Live Demo**: [BrainWave](https://KarthickRamAlagar.github.io/BrainWave/)
+    🌐 <strong>Live Demo</strong>: <a href="https://KarthickRamAlagar.github.io/BrainWave/">BrainWave</a>
   </div>
 </div>
 
+---
+
 ## 📋 Table of Contents
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🛠️ [Installation](#installation)
+1. 🤖 [Introduction](#introduction)  
+2. ⚙️ [Tech Stack](#tech-stack)  
+3. 🔋 [Features](#features)  
+4. 🤸 [Quick Start](#quick-start)  
+5. 🕸️ [Snippets](#snippets)  
+6. 🛠️ [Installation](#installation)  
+
+---
 
 ## 🤖 Introduction
 
 Brainwave is a modern UI/UX website developed using React.js and Tailwind CSS. It features a clean design, smooth animations, and responsive layouts, making it a perfect reference for modern web development projects.
+
+---
 
 ## ⚙️ Tech Stack
 
@@ -39,19 +45,18 @@ Brainwave is a modern UI/UX website developed using React.js and Tailwind CSS. I
 - **React.js**
 - **Tailwind CSS**
 
+---
+
 ## 🔋 Features
 
-👉 **Beautiful Sections**: Includes hero, services, features, how to use, roadmap, pricing, footer, and header.
+👉 **Beautiful Sections**: Includes hero, services, features, how to use, roadmap, pricing, footer, and header.  
+👉 **Parallax Animations**: Engaging effects triggered by mouse movement and scrolling.  
+👉 **Complex UI Geometry**: Utilizes Tailwind CSS for intricate shapes like circular feature displays, grid lines, and side lines.  
+👉 **Latest UI Trends**: Incorporates modern design elements such as bento grids.  
+👉 **Cool Gradients**: Enhances visuals with stylish gradients using Tailwind CSS for cards, buttons, etc.  
+👉 **Responsive**: Ensures seamless functionality and aesthetics across all devices.  
 
-👉 **Parallax Animations**: Engaging effects triggered by mouse movement and scrolling.
-
-👉 **Complex UI Geometry**: Utilizes Tailwind CSS for intricate shapes like circular feature displays, grid lines, and side lines.
-
-👉 **Latest UI Trends**: Incorporates modern design elements such as bento grids.
-
-👉 **Cool Gradients**: Enhances visuals with stylish gradients using Tailwind CSS for cards, buttons, etc.
-
-👉 **Responsive**: Ensures seamless functionality and aesthetics across all devices.
+---
 
 ## 🤸 Quick Start
 
@@ -59,17 +64,18 @@ Follow these steps to set up the project locally on your machine.
 
 ### Prerequisites
 
-Make sure you have the following installed on your machine:
+Make sure you have the following installed:
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Packages
+- [npm](https://www.npmjs.com/)
+
 ### Cloning the Repository
+
 ```bash
 git clone https://github.com/KarthickRamAlagar/BrainWave.git
 cd BrainWave
 ```
-  
 ## 🛠️ Installation
 
 ### Step 1: Install the Project Dependencies
